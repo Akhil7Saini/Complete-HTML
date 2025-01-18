@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Part 6</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            table{
+                text-align: center;
+                text-transform: capitalize;
+                border: 2px solid;
+                border-collapse: collapse;
+            }
+            thead{
+                font-weight: bold;
+            }
+            tr, td, thead{
+                border: 1px solid #000;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Table Tag</h1>
+
+        <!--? The <table> HTML element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data. -->
+
+        <table border="2px">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Password</td>
+                </tr>
+            </thead>
+            <tr>
+                <td>Git</td>
+                <td>hub</td>
+            </tr>
+            <tr>
+                <td>hub</td>
+                <td>1928</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!--* The "colspan" attribute in HTML is used in the <td> or <th> tags within a table to specify the number of columns a cell should span across. -->
+
+        <!--* The "rowspan" attribute in HTML is used in the <td> or <th> tags within a table to specify the number of rows a cell should span across -->
+
+        <table>
+            <tr>
+                <td rowspan="4">Security</td>
+                <td>ID</td>
+                <td>Password</td>
+            </tr>
+            <tr>
+                <td>abc</td>
+                <td>123</td>
+            </tr>
+            <tr>
+                <td>xyz</td>
+                <td>789</td>
+            </tr>
+            <tr>
+                <td  colspan="2">Count: 2</td>
+            </tr>
+        </table>   
+        
+
+        <br>
+
+        <!--? Create a TimeTable-->
+
+        <table>
+            <tr>
+                <th colspan="8">Time Table</th>
+            </tr>
+            <tr>
+                <td rowspan="8">Time</td>
+                <td></td>
+                <td>Mon</td>
+                <td>Tue</td>
+                <td>Wed</td>
+                <td>Thr</td>
+                <td>Fri</td>
+                <td>Sat</td>
+            </tr>
+            <tr>
+                <td>9:30am to 10:00am</td>
+                <td>Math</td>
+                <td rowspan="3">GK</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>10:00am to 10:30am</td>
+                <td>Science</td>
+                <td>Science</td>
+                <td>Science</td>
+                <td>Science</td>
+                <td>Science</td>
+            </tr>
+            <tr>
+                <td>10:30am to 11:00am</td>
+                <td>CS</td>
+                <td>CS</td>
+                <td>CS</td>
+                <td>CS</td>
+                <td>CS</td>
+            </tr>
+            <tr>
+                <td>11:00am to 12:00pm</td>
+                <td colspan="6">Lunch</td>
+            </tr>
+            <tr>
+                <td>12:00pm to 12:30pm</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+                <td rowspan="3">Games</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td>12:30pm to 1:00pm</td>
+                <td>SST</td>
+                <td>SST</td>
+                <td>SST</td>
+                <td>SST</td>
+                <td>SST</td> 
+            </tr>
+            <tr>
+                <td>1:00pm to 1:30pm</td>
+                <td>Hindi</td>
+                <td>Hindi</td>
+                <td>Hindi</td>
+                <td>Hindi</td>
+                <td>Hindi</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!--? Advance Table -->
+
+        <table>
+            <tr>
+                    <td rowspan="2">Table 1</td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>Table 1</tr>
+                        <tr>
+                            <td>Table 2</td>
+                            <td>Table 2</td>
+                        </tr>
+                        <tr>
+                            <td>Table 2</td>
+                            <td>Table 2</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2"> 
+                    This is a list <br>
+                    <ul>
+                        <li>item 1</li>
+                        <li>item 2</li>
+                    </ul>
+                </td>
+                <tr>
+                    <td>Table 1</td>
+                </tr>
+            </tr>
+        </table>
+    
+    </body>
+</html>

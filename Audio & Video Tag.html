@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Part 8</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+            html {
+              font-family: "jost", sans-serif;
+              background-color: #efefef;
+            }
+            h1 {
+                font-weight: bold;
+            }
+            audio, video, img {
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                border-radius: 25px;
+                display: block; /* Makes the element block-level */
+                margin: 20px auto; /* Centers the element horizontally */
+                max-width: 80%; 
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Audio Tag</h1>
+    
+        <!--! Audio (<audio>): The <audio> element is used to embed audio content in a webpage. It supports various audio formats and provides controls for playback. -->
+
+        <!-- *------------------------------------- -->
+        <!--* HTML AUDIO TAG - Commonly supported audio formats
+        <!-- *---------------------------------------- -->
+
+        <!-- 
+            ? MP3 (audio/mpeg): A widely supported format for audio. Provides good quality with reasonable file size. 
+            ? WAV (audio/wav): An uncompressed audio format with excellent quality, but larger file sizes. 
+            ? Ogg Vorbis (audio/ogg): A free and open audio format that provides good quality with smaller file sizes compared to MP3. 
+-->
+        
+        <p>Here's a few words about LinkedIn</p>
+
+        <img 
+            src="Images\LinkedIn.jpeg" 
+            alt="LinkedIn Logo" 
+            title="LinkedIn Logo"
+            width="300px">
+
+        <br><br>
+
+        <audio controls autoplay muted>
+           <source src="Audios\LinkedIn.ogg" type="audio/ogg" />
+           <source src="Audios\LinkedIn.wav" type="audio/wav" />
+           <source src="Audios\LinkedIn.mp3" type="audio/mp3" />
+           Your browser does not support the audio element.
+        </audio>
+
+
+        <h1>Video Tag</h1>
+
+        <!--!  The <video> HTML element embeds a media player which supports video playback into the document. -->
+
+
+        <!-- *------------------------------------- -->
+        <!--* HTML VIDEO TAG - Commonly supported video formats
+        <!-- *---------------------------------------- -->
+
+        <!--
+            ? MP4 (video/mp4): A widely supported format that provides good quality with efficient compression. Recommended for cross-browser compatibility. 
+            ? WebM (video/webm): A modern open-source format developed by Google with good compression and quality. Well supported in most modern browsers. 
+            ? Ogg (video/ogg): A free and open multimedia format that includes video, audio, and subtitles. It's supported but less commonly used. -->
+
+
+        <video controls autoplay muted loop poster="Images\video thumbnail.jpeg">
+            <source src="Videos\wilelife.mp4" type="video/mp4" />
+            <source src="Videos\wilelife.webm" type="video/webM" />
+            <source src="Videos\wilelife.ogg" type="video/ogg" />
+            Your browser does not support the video element.
+        </video>
+
+
+        <!-- *-------------------------------------
+        <!--*       HTML AUDIO TAG - Attributes
+        <!-- *---------------------------------------- -->
+        <!--? 
+        <!--?    controls: Adds playback controls (play, pause, volume, etc.).
+        <!--?    autoplay: Starts playback automatically. 
+        <!--?    loop: Repeats the media indefinitely.
+        <!--?    preload: Specifies if the media should be loaded when the page loads. 
+        <!--?    poster: Displays an image before the media loads. 
+        -->
+
+        
+
+    </body>
+</html>

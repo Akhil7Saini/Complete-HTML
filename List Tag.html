@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Part 5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+            html {
+              font-family: "jost", sans-serif;
+              background-color: #efefef;
+            }
+            h1 {
+              font-weight: bold;
+            }
+            li{
+                text-transform: capitalize;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>List Tag</h1>
+
+        <!--* Unordered List (<ul>):  An unordered list is used to create a list of items that are not in any particular order. Each list item is marked with a bullet point. -->
+        
+        <h3>Unordered List</h3>
+
+        <ul>
+            <li>apple</li>
+            <li>mango</li>
+            <li>banana</li>
+        </ul>
+
+        <!--* Unordered list styles:
+        <!--? Disc (list-style-type: disc;): Default style - filled circles.
+        <!--? Circle (list-style-type: circle;): Hollow circles.
+        <!--? Square (list-style-type: square;): Squares.
+  `     <!--? None (list-style-type: none;): No bullet points.-->
+
+        <ul style="list-style-type: square;">
+            <li>Grapes</li>
+            <li>Orange</li>
+            <li>Pineapple</li>
+        </ul>
+
+        <ul style="list-style-type: none;">
+            <li>papaya</li>
+            <li>pear</li>
+            <li>guvava</li>
+        </ul>
+
+        <br>
+
+        <!--* Ordered List (<ol>):
+        <!--* An ordered list is used to create a list of items in a specific order, typically indicated by numbers. -->
+
+        <h3>Ordered List</h3>
+
+        <ol>
+            <li>apple</li>
+            <li>mango</li>
+            <li>banana</li>
+        </ol>
+
+        <!--* Ordered List (<ol>) Styles:
+        <!--? Decimal (list-style-type: decimal;): Default style - decimal numbers.
+        <!--? Lowercase Letters (list-style-type: lower-alpha;): Lowercase letters (a, b, c).
+        <!--? Uppercase Letters (list-style-type: upper-alpha;): Uppercase letters (A, B, C).
+        <!--? Lowercase Roman Numerals (list-style-type: lower-roman;): Lowercase Roman numerals (i, ii, iii).
+        <!--? Uppercase Roman Numerals (list-style-type: upper-roman;): Uppercase Roman numerals (I, II, III)  -->
+
+        <ol style="list-style-type: lower-alpha;">
+            <li>Grapes</li>
+            <li>Orange</li>
+            <li>Pineapple</li>
+        </ol>
+
+        <ul style="list-style-type: upper-roman;">
+            <li>papaya</li>
+            <li>pear</li>
+            <li>guvava</li>
+        </ul>
+
+        <ul style="list-style-type: none;">
+            <li>kivi</li>
+            <li>watermelon</li>
+            <li>strawberry</li>
+        </ul>
+
+        <!--* The "start" attribute is used with the <ol> (ordered list) tag to specify the starting value for the numbering of list items.-->
+
+        <ol start="6">
+            <li>Maruti Suzuki</li>
+            <li>Tata Moters</li>
+            <li>Toyata</li>
+            <li>Hyundai</li>
+            <li>Kia</li>
+        </ol>
+
+        <!--! Note 
+        <!--? Instead of "list-style-type" we can directly use type attribute
+        <!--? The type attribute in HTML lists specifies the style of the list markers for ordered (<ol>) and unordered (<ul>) lists. -->
+
+        <ul type="Circle">
+            <li>Roadways</li>
+            <li>Railways</li>
+            <li>Waterways</li>
+            <li>Airways</li>
+        </ul>
+
+        <ol type="i">
+            <li>Roadways</li>
+            <li>Railways</li>
+            <li>Waterways</li>
+            <li>Airways</li>
+        </ol>
+
+        <!--* Nested List-->
+        <ul>
+            <li>
+              fruits
+              <ol>
+                <li>banana</li>
+                <li>
+                  apple
+                  <ul>
+                    <li>red</li>
+                    <li>green</li>
+                  </ul>
+                </li>
+                <li>pears</li>
+              </ol>
+            </li>
+            <li>vegetables</li>
+            <li>meats</li>
+          </ul>
+
+          <!--* Navbar Using List -->
+          <ul style="list-style: none; display: flex; gap: 15px">
+            <li><a href="https://github.com" target="_blank"> Home </a></li>
+            <li>About</li>
+            <li>service</li>
+            <li>contact</li>
+          </ul>
+    
+    </body>
+</html>

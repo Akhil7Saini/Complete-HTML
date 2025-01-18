@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Part 4(a)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+            html{
+                font-family: "Fira Sans", serif;
+                font-weight: bold;
+                background-color: #ffffff;
+
+            }
+            #101{
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                border-radius: 8px;
+            }
+            #xyz{
+                max-width: 300px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                border-radius: 10px;
+            }
+            #a1{
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                border-radius: 8px;
+            }
+            #9z{
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Image Tag</h1>
+
+        <img id="101" 
+            src="Images\moon.jpeg" 
+            alt="Moon Image"
+            width="300px"
+            height="300px"
+            title="The Moon"
+            loading="lazy" />
+
+        <br><br>
+
+        <!--* Responsive Image -->
+        <img id="xyz" 
+            src="Images\sun.jpeg" 
+            alt="Sun Image"
+            width="100%"
+            height="auto"
+            title="The Sun"
+            loading="lazy" />
+
+        <br><br>
+
+        <!--* Image with Link -->
+        <a href="http://youtube.com" target="_blank">
+            <img id="a1" 
+                src="Images\earth.jpeg"
+                alt="Earth Image"
+                width="300px"
+                height="300px"
+                title="The Earth"
+                loading="lazy" />
+        </a>
+
+        <br><br>
+
+        <!--* Image with particular section with a Link -->
+        <img id="9z"
+            src="Images\stars.jpeg"
+            alt="Clickable Image"
+            usemap="#map"
+            width="250"
+            height="150" />
+  
+      <map name="map">
+        <area
+          shape="rect"
+          coords="50,30,150,80"
+          target="_blank"
+          href="http://youtube.com"
+          alt="Youtube"
+        />
+        <!-- <area
+      shape="circle"
+      coords="200,150,50"
+      href="https://youtu.be/5p8e2ZkbOFU"
+      alt="Central Area"
+    />
+    <area
+      shape="poly"
+      coords="300,100,350,200,250,200"
+      href="https://youtu.be/5p8e2ZkbOFU"
+      alt="South Area"
+    /> -->
+      </map>
+        
+    </body>
+</html>

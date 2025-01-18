@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang=" en">
+    <head>
+        <title>HTML Part 3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1>HTML Course</h1>
+
+        <p>GitHub is a web-based platform for version control and collaboration, primarily used by developers to manage code repositories. It supports Git, a popular version control system, allowing teams to track changes, collaborate on projects, and manage code efficiently. GitHub provides features like pull requests, issues, and branches, enabling seamless team collaboration. It also offers CI/CD workflows, documentation hosting, and project management tools. Public repositories are free, promoting open-source development, while private repositories cater to businesses. Developers can showcase projects, contribute to others' code, and explore a vast community of innovations, making GitHub essential in modern software development.</p>
+
+        <br>
+
+        <!-- *------------------------------------- -->
+        <!--! HTML ANCHOR TAG - ATTRIBUTES
+        <!-- *---------------------------------------- -->
+
+
+        <!--* href: 
+        <!--? Specifies the URL or destination the link points to. -->
+        <a href="https://www.youtube.com/@GitHub">Subscribe to Github Youtube Channel. (Open on same tab/window). </a>
+        <br>
+
+        <!--! To create a link that takes the user to a specific section or element within the
+        <!--! same webpage, you can use the anchor (a) tag's href attribute along with the id <!--! attribute of the target element. -->
+        <a href="#our_Contact">Get our Contact (Move to our contact section) </a>
+        <br>
+
+        <!--* target: 
+        <!--? Specifies where the linked content will be displayed (e.g., _blank for a new window/tab). -->
+        <a href="https://www.youtube.com/@GitHub" target="_blank">Subscribe to Github Youtube Channel (Open in new tab).</a>
+        <br>
+
+
+        <!--? rel:Describes the relationship between the current page and the linked page.  -->
+
+        <!--* title:
+        <!--? Provides additional information when hovering over the link. -->
+        <a href="https://www.youtube.com/@GitHub" target="_blank" title="Click now to subscribe">Subscribe to Github Youtube Channel (Have a title).</a>
+        <br>
+
+        <!--* id: 
+        <!--? Assigns a unique identifier to the anchor for linking within the page. -->
+        <a href="https://www.youtube.com/@GitHub" target="_blank" id="101">Subscribe to Github Youtube Channel (Have an Id).</a>
+        <br>
+
+        <!--* class: 
+        <!--? Assigns a class for styling or JavaScript interactions. style: Applies -->
+        <a href="https://www.youtube.com/@GitHub" class="alpha">Subscribe to Github Youtube Channel. (Have a Class).</a>
+
+        <hr>
+
+        <h3>About Us</h3>
+        <p>GitHub is a web-based platform for version control and collaboration, primarily used by developers to manage code repositories. It supports Git, a popular version control system, allowing teams to track changes, collaborate on projects, and manage code efficiently. GitHub provides features like pull requests, issues, and branches, enabling seamless team collaboration. It also offers CI/CD workflows, documentation hosting, and project management tools. Public repositories are free, promoting open-source development, while private repositories cater to businesses. Developers can showcase projects, contribute to others' code, and explore a vast community of innovations, making GitHub essential in modern software development.</p>
+
+
+        <h3>Our History</h3>
+        <p>GitHub is a web-based platform for version control and collaboration, primarily used by developers to manage code repositories. It supports Git, a popular version control system, allowing teams to track changes, collaborate on projects, and manage code efficiently. GitHub provides features like pull requests, issues, and branches, enabling seamless team collaboration. It also offers CI/CD workflows, documentation hosting, and project management tools. Public repositories are free, promoting open-source development, while private repositories cater to businesses. Developers can showcase projects, contribute to others' code, and explore a vast community of innovations, making GitHub essential in modern software development.</p>
+
+
+        <h3>Our Aim</h3>
+        <p>GitHub is a web-based platform for version control and collaboration, primarily used by developers to manage code repositories. It supports Git, a popular version control system, allowing teams to track changes, collaborate on projects, and manage code efficiently. GitHub provides features like pull requests, issues, and branches, enabling seamless team collaboration. It also offers CI/CD workflows, documentation hosting, and project management tools. Public repositories are free, promoting open-source development, while private repositories cater to businesses. Developers can showcase projects, contribute to others' code, and explore a vast community of innovations, making GitHub essential in modern software development.</p>
+
+
+        <h3>Our Services</h3>
+        <p>GitHub is a web-based platform for version control and collaboration, primarily used by developers to manage code repositories. It supports Git, a popular version control system, allowing teams to track changes, collaborate on projects, and manage code efficiently. GitHub provides features like pull requests, issues, and branches, enabling seamless team collaboration. It also offers CI/CD workflows, documentation hosting, and project management tools. Public repositories are free, promoting open-source development, while private repositories cater to businesses. Developers can showcase projects, contribute to others' code, and explore a vast community of innovations, making GitHub essential in modern software development.</p>
+
+        <hr>
+
+        <h3 id="our_Contact">Contace Us</h3>
+        <p>GitHub is a web-based platform for version control and collaboration, primarily used by developers to manage code repositories. It supports Git, a popular version control system, allowing teams to track changes, collaborate on projects, and manage code efficiently. GitHub provides features like pull requests, issues, and branches, enabling seamless team collaboration. It also offers CI/CD workflows, documentation hosting, and project management tools. Public repositories are free, promoting open-source development, while private repositories cater to businesses. Developers can showcase projects, contribute to others' code, and explore a vast community of innovations, making GitHub essential in modern software development.</p>
+
+        <hr>
+        <br>
+
+        <!--* What's the difference between relative and absolute URLs in the href attribute? 
+        <!--? Relative URLs are URLs that are relative to the current page's URL.    
+        <!--?Absolute URLs are complete URLs, including the protocol (http/https) and domain. -->
+
+
+        <!--*  download:
+        <!--? The download attribute in the <a> tag is used to specify that the linked file should be downloaded when clicked, rather than navigating to it.-->
+
+        <!-- This is a relative path -->
+        <p>To download the image, click on <a href="images/github_image.jpeg" download>Download</a></p>
+    
+        <!-- This is a absolute path -->
+        <p>To download the image, click on <a href="D:/My_Folder/Web_Development/HTML/Images/github_image.jpeg" download>Download</a></p>
+
+
+        <!--* mailto:
+        <!--? attribute in an anchor tag creates a link to open the user's default email client -->
+        <a href="mailto: github@mail.com">Mail Us</a>
+
+        <br><br>
+
+        <!--* tel: 
+        <!--? It creates a clickable link to dial a phone number -->
+        <a href="tel: +1239875460">Call Us</a>
+
+        <br><br>
+
+        <!--! HTML Enitites -->
+        <!--? HTML entities are special codes used to represent characters in HTML that might otherwise be interpreted as part of the HTML syntax. They are used to display reserved characters, special symbols, or characters not available on a standard keyboard. 
+        &lt;: Less than sign (<) 
+        &gt;: Greater than sign (>) 
+        &amp;: Ampersand (&) 
+        &quot;: Double quotation mark (") 
+        &apos;: Single quotation mark or apostrophe (') 
+        &nbsp;: Non-breaking space ( ) 
+        &dollar;: Dollar Sign ($) 
+        &copy;: Copyright symbol (©)  
+        &reg;: Registered trademark symbol (®) 
+        &trade;: Trademark symbol (™) 
+        &hearts;: Heart symbol
+        -->
+       <a href="https://www.example.com" title="Isn&quot;t this fun?">A link to my &lt; fsdf &gt; example.</a> 
+       <p>Isn&apos;t  this awsome</p>
+
+        
+        <!--* inline CSS styling to the anchor.
+        <!--* tabindex: Specifies the tab order when navigating using the keyboard. 
+        <!--* accesskey: Defines a keyboard shortcut to activate the link. aria-*: Attributes for accessibility purposes (e.g.,aria-label). -->
+
+    </body>
+</html>

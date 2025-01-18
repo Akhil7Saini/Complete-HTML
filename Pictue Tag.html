@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Part 4(b)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+            html {
+              font-family: "jost", sans-serif;
+              font-weight: bold;
+              text-align: center;
+              background-color: #efefef;
+              /* color: #fff; */
+            }
+            img {
+              box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+              border-radius: 8px;
+            }
+          </style>
+    </head>
+    <body>
+
+        <!--* The <picture> tag in HTML is used to provide multiple versions of an image, allowing the browser to select the most appropriate one based on the device's screen size, resolution, or other factors. -->
+            
+        <h1>HTML PICTURE TAG</h1>
+        <picture>
+          <source srcset="Images/html.webp" type="image/webp" />
+          <source srcset="Images/html.jpg" type="image/jpg" />
+          <source srcset="Images/html.jpeg" type="image/jpeg" />
+          <source srcset="Images/html.svg" type="image/svg" />
+          <img
+            src="Images/html.png"
+            alt="best html course"
+            width="500"
+          />
+    </body>
+</html>
